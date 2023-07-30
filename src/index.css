@@ -44,12 +44,17 @@ body {
 
   text-transform: uppercase;
   text-align: center;
-  font-size: 5.2rem;
+  font-size: 3.5rem;
   font-weight: 300;
   letter-spacing: 3px;
   position: relative;
   width: 100%;
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .header h1 {
+    font-size: 5.2rem;
+  }
 }
 
 .header h1::before,
@@ -100,9 +105,8 @@ body {
 
 .pizzas {
   list-style: none;
-  /* display: grid; */
-  grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  display: grid;
+  gap: 1.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,7 +119,7 @@ body {
 }
 
 .pizza {
-  gap: 3.2rem;
+  gap: 4.2rem;
 }
 @media screen and (min-width: 768px) {
   .pizza {
